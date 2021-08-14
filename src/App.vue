@@ -41,7 +41,8 @@ padding-top: 57px;
   width: 100%;
 }
 .header-language{
-  width: 4rem;
+  text-transform: capitalize;
+  width: max-content;
   user-select: none;
   cursor: pointer;
   font-family: ALSArtemiusSans,Helvetica,sans-serif;
