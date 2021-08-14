@@ -30,7 +30,7 @@ export default {
   min-height: 100Vh;
 }
 .content{
-padding-top: 32px;
+padding-top: 57px;
   flex: 1 0 auto;
 }
 .header-wrapper{
