@@ -1,0 +1,20 @@
+.header-buttons{
+  user-select: none;
+  cursor: pointer;
+  padding: .4em .6em;
+  font-family: ALSArtemiusSans,Helvetica,sans-serif;
+  font-size: 25px;
+}
+div.header-buttons:hover {
+  color: white;
+  background-color: gray;
+}
+.header-buttons-active{
+  user-select: none;
+
+  padding: .4em .6em;
+  font-family: ALSArtemiusSans,Helvetica,sans-serif;
+  font-size: 25px;
+  color: gray;
+
+}

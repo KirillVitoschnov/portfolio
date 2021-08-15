@@ -1,0 +1,14 @@
+.header-language{
+  text-transform: capitalize;
+  width: max-content;
+  user-select: none;
+  cursor: pointer;
+  font-family: ALSArtemiusSans,Helvetica,sans-serif;
+  padding: .4em .6em;
+  color: white;
+  font-size: 25px;
+}
+div.header-language:hover {
+  color: white;
+  background-color: gray;
+}
