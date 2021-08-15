@@ -1,6 +1,6 @@
 <template>
   <div class="header-wrapper" >
-    <div @click="changeLang" class="header-language">{{ currentLang }}</div>
+    <div @click="changeLang" class="header-language">{{ $i18n.locale }}</div>
     <div class="header-content">
       <div v-bind:class="{ 'header-buttons-active': currentRouteName=='/' }" @click="changeRoute('/')"
            class="header-buttons">{{$t('Главная')}}
@@ -22,14 +22,12 @@ export default {
   name: 'Header',
   data() {
     return {
-      currentLang:this.$i18n.locale,
       currentRouteName: ''
     }
   },
   mounted() {
     this.currentRouteName = this.$router.currentRoute.path
-    this.currentLang=localStorage.getItem('locale')==false ? 'ru' : localStorage.getItem('locale')
-    this.$i18n.locale=this.currentLang
+    this.$i18n.locale=localStorage.getItem('locale')==false ? 'ru' : localStorage.getItem('locale')
   },
   methods: {
     changeRoute(name) {
@@ -37,19 +35,17 @@ export default {
       this.currentRouteName = this.$router.currentRoute.path
     },
     changeLang() {
-      if (this.currentLang == 'ru') {
-        this.currentLang = 'kz'
+      if (this.$i18n.locale == 'ru') {
         this.$i18n.locale='kz'
         localStorage.setItem('locale', 'kz');
-      } else if (this.currentLang == 'kz')
+      } else if (this.$i18n.locale == 'kz')
         {
-        this.currentLang = 'en'
           this.$i18n.locale='en'
           localStorage.setItem('locale', 'en');
       }
-      else if (this.currentLang == 'en')
+      else if (this.$i18n.locale == 'en')
       {
-        this.currentLang = 'ru'
+        this.$i18n.locale = 'ru'
         this.$i18n.locale='ru'
         localStorage.setItem('locale', 'ru');
       }
