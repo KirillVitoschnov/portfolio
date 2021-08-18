@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import mainPage from '@/components/MainPage.vue'
 import works from '@/components/Works'
+import AboutMe from '@/components/AboutMe'
 
 Vue.use(Router);
 
@@ -22,7 +23,7 @@ let router= new Router ({
         },
         {
             path: '/about_me',
-            component: works
+            component: AboutMe
         },
 
     ]

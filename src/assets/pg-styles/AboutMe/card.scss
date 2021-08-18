@@ -1,0 +1,11 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0 60px;
+  background-color: #fff;
+  box-sizing: border-box;
+  filter: drop-shadow(0 0 20px rgba(0,60,120,.06));
+  border-radius: 2px;
+  background-clip: padding-box;
+  height:300px
+}

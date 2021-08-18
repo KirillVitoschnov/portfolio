@@ -1,3 +1,4 @@
+@import './AboutMe/index';
 @import './header/index';
 @import './footer/index';
 body{
@@ -11,6 +12,9 @@ body{
   min-height: 100Vh;
 }
 .content{
+  width: 1360px;
+  margin: 0 auto;
   padding-top: 57px;
   flex: 1 0 auto;
+
 }
