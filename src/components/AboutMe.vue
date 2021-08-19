@@ -4,27 +4,26 @@
       <h3 class="section-title">Навыки</h3>
       <div class="card">
         <div class="card-content">
-          <h4 class="card-title">Html</h4>
+          <h4 class="card-title">Front-end</h4>
+          <div class="card-icon-wrapper">
+
           </div>
-      </div>
-      <div class="card">
-          <div class="card-content">
-            <h4 class="card-title">CSS</h4>
           </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <h4 class="card-title">JavaScript</h4>
-        </div>
       </div>
       <div class="card">
         <div class="card-content">
           <h4 class="card-title">Back-end</h4>
+          <div class="card-icon-wrapper">
+
+          </div>
         </div>
       </div>
       <div class="card">
         <div class="card-content">
           <h4 class="card-title">Прочее</h4>
+          <div class="card-icon-wrapper">
+
+          </div>
         </div>
       </div>
     </section>
