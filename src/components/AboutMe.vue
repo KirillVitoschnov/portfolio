@@ -7,27 +7,27 @@
           <h4 class="card-title">Front-end</h4>
           <div class="card-icons-wrapper">
             <div  class="card-icon">
-              <img  alt="" src="../assets/images/html5.png" class="card-icon-image">
+              <img  alt="" src="../assets/images/logos/html5.png" class="card-icon-image">
               HTML5
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/css3.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/css3.png"  class="card-icon-image">
               CSS3
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/javascript.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/javascript.png"  class="card-icon-image">
               JavaScript
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/sass.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/sass.png"  class="card-icon-image">
               SASS
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/vue-js.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/vue-js.png"  class="card-icon-image">
               VUE
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/bootstrap.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/bootstrap.png"  class="card-icon-image">
               Bootstrap
             </div>
 
@@ -39,15 +39,15 @@
           <h4 class="card-title">Back-end</h4>
           <div class="card-icons-wrapper">
             <div class="card-icon">
-              <img alt="" src="../assets/images/laravel.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/laravel.png"  class="card-icon-image">
               Laravel
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/php.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/php.png"  class="card-icon-image">
               Php
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/Mysql.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/Mysql.png"  class="card-icon-image">
               MySql
             </div>
           </div>
@@ -58,19 +58,19 @@
           <h4 class="card-title">Прочее</h4>
           <div class="card-icons-wrapper">
             <div class="card-icon">
-              <img alt="" src="../assets/images/git.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/git.png"  class="card-icon-image">
               Git
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/linux.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/linux.png"  class="card-icon-image">
               Linux
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/ssh.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/ssh.png"  class="card-icon-image">
              SSH
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/figma.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/figma.png"  class="card-icon-image">
               Figma
             </div>
 
