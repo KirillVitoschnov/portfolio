@@ -7,7 +7,7 @@ import AboutMe from '@/components/AboutMe'
 Vue.use(Router);
 
 let router= new Router ({
-    mode: 'history',
+    mode: 'hash',
     routes: [
         {
             path: '/portfolio/',
