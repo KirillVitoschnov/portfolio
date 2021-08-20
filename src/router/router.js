@@ -14,15 +14,15 @@ let router= new Router ({
             component: mainPage
         },
         {
-            path: '/works',
+            path: '/portfolio/works',
             component: works
         },
         {
-            path: '/contacts',
+            path: '/portfolio/contacts',
             component: works
         },
         {
-            path: '/about_me',
+            path: '/portfolio/about_me',
             component: AboutMe
         },
 
