@@ -27,7 +27,7 @@ export default {
   },
   mounted() {
     this.currentRouteName = this.$router.currentRoute.path
-    this.$i18n.locale=localStorage.getItem('locale')==false ?  localStorage.getItem('locale') : 'ru'
+    this.$i18n.locale=sessionStorage.getItem('locale')==false ?  localStorage.getItem('locale') : 'ru'
   },
   methods: {
     changeRoute(name) {
@@ -37,17 +37,17 @@ export default {
     changeLang() {
       if (this.$i18n.locale == 'ru') {
         this.$i18n.locale='kz'
-        localStorage.setItem('locale', 'kz');
+        sessionStorage.setItem('locale', 'kz');
       } else if (this.$i18n.locale == 'kz')
         {
           this.$i18n.locale='en'
-          localStorage.setItem('locale', 'en');
+          sessionStorage.setItem('locale', 'en');
       }
       else if (this.$i18n.locale == 'en')
       {
         this.$i18n.locale = 'ru'
         this.$i18n.locale='ru'
-        localStorage.setItem('locale', 'ru');
+        sessionStorage.setItem('locale', 'ru');
       }
 
     }
