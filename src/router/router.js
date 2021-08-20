@@ -10,22 +10,22 @@ let router= new Router ({
     mode: 'hash',
     routes: [
         {
-            path: '/portfolio/',
+            path: '/',
             component: mainPage
         },
         {
-            path: '/portfolio/works',
+            path: '/works',
             component: works
         },
         {
-            path: '/portfolio/contacts',
+            path: '/contacts',
             component: works
         },
         {
-            path: '/portfolio/about_me',
+            path: '/about_me',
             component: AboutMe
         },
-        { path: '*', redirect: '/portfolio/' },
+        { path: '*', redirect: '/' },
     ]
 })
 
