@@ -25,8 +25,7 @@ let router= new Router ({
             path: '/portfolio/about_me',
             component: AboutMe
         },
-        { path: '/', redirect: '/portfolio/' },
-
+        { path: '*', redirect: '/portfolio/' },
     ]
 })
 
