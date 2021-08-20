@@ -10,7 +10,7 @@ let router= new Router ({
     mode: 'history',
     routes: [
         {
-            path: 'portfolio/',
+            path: '/portfolio/',
             component: mainPage
         },
         {
