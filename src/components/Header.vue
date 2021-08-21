@@ -27,7 +27,7 @@ export default {
   },
   mounted() {
     this.currentRouteName = this.$router.currentRoute.path
-    this.$i18n.locale=sessionStorage.getItem('locale')==false ?  localStorage.getItem('locale') : 'ru'
+    this.$i18n.locale=sessionStorage.getItem('locale')==false ?  sessionStorage.getItem('locale') : 'ru'
   },
   methods: {
     changeRoute(name) {

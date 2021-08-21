@@ -80,6 +80,48 @@
     </section>
     <section id="experience">
       <h3 class="section-title">Опыт работы</h3>
+      <div class="time-line-wrapper">
+      <div class="timeline-movement-top">
+        <div class="timeline-round"></div>
+      </div>
+        <div>
+        <div class="timeline-movement">
+          <div class="time-line-card-wrapper-helper">
+          <div class="timeline-badge"></div>
+          <div class="time-line-card-wrapper">
+          </div>
+          </div>
+        </div>
+        <div class="timeline-movement">
+          <div class="time-line-card-wrapper-helper">
+          <div class="timeline-badge"></div>
+          <div class="time-line-card-wrapper">
+          </div>
+          </div>
+        </div>
+          <div class="timeline-movement">
+            <div class="time-line-card-wrapper-helper">
+              <div class="timeline-badge"></div>
+              <div class="time-line-card-wrapper">
+              </div>
+            </div>
+          </div>
+          <div class="timeline-movement">
+            <div class="time-line-card-wrapper-helper">
+              <div class="timeline-badge"></div>
+              <div class="time-line-card-wrapper">
+              </div>
+            </div>
+          </div>
+          <div class="timeline-movement">
+            <div class="time-line-card-wrapper-helper">
+              <div class="timeline-badge"></div>
+              <div class="time-line-card-wrapper">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="awards">
       <h3 class="section-title">Достижения</h3>
