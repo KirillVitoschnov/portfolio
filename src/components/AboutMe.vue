@@ -1,53 +1,53 @@
 <template>
   <div class="content">
-    <section  id="skills">
+    <section id="skills">
       <h3 class="section-title">Навыки</h3>
       <div class="card">
         <div class="card-content">
           <h4 class="card-title">Front-end</h4>
           <div class="card-icons-wrapper">
-            <div  class="card-icon">
-              <img  alt="" src="../assets/images/logos/html5.png" class="card-icon-image">
+            <div class="card-icon">
+              <img alt="" src="../assets/images/logos/html5.png" class="card-icon-image">
               HTML5
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/css3.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/css3.png" class="card-icon-image">
               CSS3
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/javascript.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/javascript.png" class="card-icon-image">
               JavaScript
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/sass.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/sass.png" class="card-icon-image">
               SASS
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/vue-js.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/vue-js.png" class="card-icon-image">
               VUE
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/bootstrap.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/bootstrap.png" class="card-icon-image">
               Bootstrap
             </div>
 
           </div>
-          </div>
+        </div>
       </div>
       <div class="card">
         <div class="card-content">
           <h4 class="card-title">Back-end</h4>
           <div class="card-icons-wrapper">
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/laravel.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/laravel.png" class="card-icon-image">
               Laravel
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/php.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/php.png" class="card-icon-image">
               Php
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/Mysql.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/Mysql.png" class="card-icon-image">
               MySql
             </div>
           </div>
@@ -58,19 +58,19 @@
           <h4 class="card-title">Прочее</h4>
           <div class="card-icons-wrapper">
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/git.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/git.png" class="card-icon-image">
               Git
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/linux.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/linux.png" class="card-icon-image">
               Linux
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/ssh.png"  class="card-icon-image">
-             SSH
+              <img alt="" src="../assets/images/logos/ssh.png" class="card-icon-image">
+              SSH
             </div>
             <div class="card-icon">
-              <img alt="" src="../assets/images/logos/figma.png"  class="card-icon-image">
+              <img alt="" src="../assets/images/logos/figma.png" class="card-icon-image">
               Figma
             </div>
 
@@ -81,42 +81,21 @@
     <section id="experience">
       <h3 class="section-title">Опыт работы</h3>
       <div class="time-line-wrapper">
-      <div class="timeline-movement-top">
-        <div class="timeline-round"></div>
-      </div>
+        <div class="timeline-movement-top">
+          <div class="timeline-round">
+            <img style="margin: auto" src="../assets/images/clock.png" height="35" width="35"/></div>
+        </div>
         <div>
-        <div class="timeline-movement">
-          <div class="time-line-card-wrapper-helper">
-          <div class="timeline-badge"></div>
-          <div class="time-line-card-wrapper">
-          </div>
-          </div>
-        </div>
-        <div class="timeline-movement">
-          <div class="time-line-card-wrapper-helper">
-          <div class="timeline-badge"></div>
-          <div class="time-line-card-wrapper">
-          </div>
-          </div>
-        </div>
-          <div class="timeline-movement">
+          <div class="timeline-movement" v-for="work in experience" :key="work.year">
             <div class="time-line-card-wrapper-helper">
-              <div class="timeline-badge"></div>
-              <div class="time-line-card-wrapper">
+              <div class="timeline-badge">
+                <span class="timeline-balloon-date-month">{{ work.mounth }}</span>
+                <span class="timeline-balloon-date-year">{{ work.year }}</span>
               </div>
-            </div>
-          </div>
-          <div class="timeline-movement">
-            <div class="time-line-card-wrapper-helper">
-              <div class="timeline-badge"></div>
               <div class="time-line-card-wrapper">
-              </div>
-            </div>
-          </div>
-          <div class="timeline-movement">
-            <div class="time-line-card-wrapper-helper">
-              <div class="timeline-badge"></div>
-              <div class="time-line-card-wrapper">
+                <div class="time-line-card-title">{{ work.title }}</div>
+                <div class="time-line-card-text">{{ work.text }}</div>
+                <div class="time-line-card-date">{{ work.data }}</div>
               </div>
             </div>
           </div>
@@ -136,7 +115,34 @@
 export default {
   name: 'AboutMe',
   data() {
-    return {}
+    return {
+      experience: [
+        {
+          year: 2021,
+          mounth: 'ИЮЛ',
+          title: '«ТОО Гребцы и Галеры»',
+          text: 'Перевод сайтов на улучшенную архитектурную модель:\n' +
+              'Сайты были переведены на SCSS с последующим бандлином\n' +
+              'Введена модульная схема с разделением сайта на компоненты и отдельные страницы (до этого все было в одной куче на обычном CSS без переменных, миксинов и прочего). Отдельно выделен индивидуальный дизайн для каждого сайта, благодаря чему стало возможно создавать новый без повторов, копирования и переназначения конфликтующих стилей\n' +
+              'Улучшена верстка страниц с упором на отказ от JS анимации и позиционирования элементов, использования картинок, табличной верстки и т.д. Внедрены (там, где было возможно) иконочные шрифты\n' +
+              'Были поправлены многочисленные баги и "узкие" места, из-за которых оформление сайта редакторами иногда вызывало ошибки отображения.',
+          data: 'Июль 2021',
+        },
+        {
+          year: 2020,
+          mounth: 'СЕН',
+          title: '«ТОО Залупа»',
+          text: 'Перевод сайтов на улучшенную архитектурную модель:\n' +
+              'Сайты были переведены на SCSS с последующим бандлином\n' +
+              'Введена модульная схема с разделением сайта на компоненты и отдельные страницы (до этого все было в одной куче на обычном CSS без переменных, миксинов и прочего). Отдельно выделен индивидуальный дизайн для каждого сайта, благодаря чему стало возможно создавать новый без повторов, копирования и переназначения конфликтующих стилей\n' +
+              'Улучшена верстка страниц с упором на отказ от JS анимации и позиционирования элементов, использования картинок, табличной верстки и т.д. Внедрены (там, где было возможно) иконочные шрифты\n' +
+              'Были поправлены многочисленные баги и "узкие" места, из-за которых оформление сайта редакторами иногда вызывало ошибки отображения.',
+          data: 'Сентябрь 2020 - Май 2021',
+        },
+
+
+      ]
+    }
   }
 }
 </script>
