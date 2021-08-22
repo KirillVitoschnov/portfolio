@@ -1,0 +1,26 @@
+.timeline-movement{
+  display: flex;
+  flex-direction: column;
+  border-bottom: dashed 1px #1f1d1d;
+  position: relative;
+  width:100%;
+  height:max-content;
+  &:nth-child(2n+1) {
+    .time-line-card-wrapper-helper{
+      margin-right: 50%;
+      padding-left: 0;
+      padding-right: 32px;
+      color:red
+
+    }
+
+  }
+  &:nth-child(2n) {
+    .time-line-card-wrapper-helper{
+      margin-left: 50%;
+      padding-left: 32px;
+      padding-right: 0;
+      color:green
+    }
+  }
+}

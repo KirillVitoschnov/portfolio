@@ -1,0 +1,14 @@
+.time-line-wrapper{
+  position: relative;
+}
+.time-line-wrapper:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 2px;
+  background-color: #282323;
+  left: 50%;
+  margin-left: -1.5px;
+
+}

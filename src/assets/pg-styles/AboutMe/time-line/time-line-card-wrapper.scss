@@ -1,0 +1,15 @@
+.time-line-card-wrapper{
+  filter: drop-shadow(0 0 20px rgba(0,60,120,.06));
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  position: relative;
+  min-height: 100px;
+  width: 100%;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+.time-line-card-wrapper-helper{
+  width:50%
+}

@@ -1,0 +1,14 @@
+.timeline-round{
+  background-color: #1d1b1b;
+  height: 35px;
+  width: 35px;
+  top: -16px;
+  margin-left: -18px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  z-index: 36;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 20px rgba(0,60,120,.06));
+}

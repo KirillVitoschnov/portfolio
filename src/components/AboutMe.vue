@@ -107,6 +107,7 @@
     </section>
     <section id="education">
       <h3 class="section-title">Образование</h3>
+
     </section>
   </div>
 </template>
