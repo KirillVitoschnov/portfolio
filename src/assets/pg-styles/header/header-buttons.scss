@@ -1,4 +1,6 @@
 .header-buttons{
+  transition-property: all;
+  transition-duration: .5s;
   user-select: none;
   cursor: pointer;
   padding: .4em .6em;
@@ -11,10 +13,10 @@ div.header-buttons:hover {
 }
 .header-buttons-active{
   user-select: none;
-
   padding: .4em .6em;
   font-family: ALSArtemiusSans,Helvetica,sans-serif;
   font-size: 25px;
   color: gray;
-
+  transition-property: all;
+  transition-duration: .5s;
 }

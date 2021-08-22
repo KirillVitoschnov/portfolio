@@ -1,4 +1,6 @@
 .header-language{
+  transition-property: all;
+  transition-duration: .5s;
   text-transform: capitalize;
   width: max-content;
   user-select: none;
@@ -9,6 +11,8 @@
   font-size: 25px;
 }
 div.header-language:hover {
+  transition-property: all;
+  transition-duration: .5s;
   color: white;
   background-color: gray;
 }

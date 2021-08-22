@@ -27,6 +27,14 @@
               VUE
             </div>
             <div class="card-icon">
+              <img alt="" src="../assets/images/logos/nuxt.png" class="card-icon-image">
+              Nuxt.js
+            </div>
+            <div class="card-icon">
+              <img alt="" src="../assets/images/logos/react.png" class="card-icon-image">
+              React
+            </div>
+            <div class="card-icon">
               <img alt="" src="../assets/images/logos/bootstrap.png" class="card-icon-image">
               Bootstrap
             </div>
@@ -107,6 +115,22 @@
     </section>
     <section id="education">
       <h3 class="section-title">Образование</h3>
+      <div class="education-wrapper">
+
+          <div class="education-card">
+            <a target="_blank" href="https://catec.kz/" class="education-card-title">Центральноазиатский
+              технико-экономический колледж (ЦАТЭК)</a>
+            <a target="_blank" href="https://catec.kz/speciality/programmnoe-obespechenie"
+                class="education-card-text">Факультет:вычислительная техника и программное обеспечение</a>
+            <div class="time-line-card-date"> 2016-2020</div>
+
+        </div>
+          <div class="education-card">
+            <a target="_blank" href="https://www.turan-edu.kz/" class="education-card-title">Университет "Туран"</a>
+            <a target="_blank" href="https://turan.edu.kz/ru/obrprogramms/informaczionnye-sistemy/" class="education-card-text">Факультет:Автономные информационные и управляющие системы</a>
+            <div class="time-line-card-date"> 2020-2023</div>
+          </div>
+      </div>
 
     </section>
   </div>
