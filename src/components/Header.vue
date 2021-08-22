@@ -1,7 +1,7 @@
 <template>
   <div class="header-wrapper" >
     <div @click="changeLang" class="header-language">{{ $i18n.locale }}</div>
-    <div class="header-content">
+    <nav class="header-content">
       <div v-bind:class="{ 'header-buttons-active': currentRouteName=='/' }" @click="changeRoute('/')"
            class="header-buttons">{{$t('Главная')}}
       </div>
@@ -14,7 +14,7 @@
       <div v-bind:class="{ 'header-buttons-active': currentRouteName=='/contacts' }" @click="changeRoute('/contacts')"
            class="header-buttons">{{$t('Контакты')}}
       </div>
-    </div>
+    </nav>
   </div>
 </template>
 <script>
