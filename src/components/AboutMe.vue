@@ -112,24 +112,39 @@
     </section>
     <section id="awards">
       <h3 class="section-title">Достижения</h3>
+      <div class="awards-wrapper">
+        <div class="awards-card">
+          <a href="http://techcup.kz/" target="_blank" class="awards-title">Almaty TechCup 2018</a>
+          <span class="awards-text">2 место на чемпионате научных проектов среди школьников и студентов в старшей лиге.  </span>
+        </div>
+        <div class="awards-card">
+          <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Almaty 2019</a>
+          <span class="awards-text">1 место на чемионате рабочих профессий в компетенции мобильная робототехника. </span>
+        </div>
+        <div class="awards-card">
+          <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Kazakhstan 2019</a>
+          <span class="awards-text">Участвие в национальном чемпионате  рабочих профессий в компетенция мобильная робототехника.</span>
+        </div>
+      </div>
     </section>
     <section id="education">
       <h3 class="section-title">Образование</h3>
       <div class="education-wrapper">
 
-          <div class="education-card">
-            <a target="_blank" href="https://catec.kz/" class="education-card-title">Центральноазиатский
-              технико-экономический колледж (ЦАТЭК)</a>
-            <a target="_blank" href="https://catec.kz/speciality/programmnoe-obespechenie"
-                class="education-card-text">Факультет:вычислительная техника и программное обеспечение</a>
-            <div class="time-line-card-date"> 2016-2020</div>
+        <div class="education-card">
+          <a target="_blank" href="https://catec.kz/" class="education-card-title">Центральноазиатский
+            технико-экономический колледж (ЦАТЭК)</a>
+          <a target="_blank" href="https://catec.kz/speciality/programmnoe-obespechenie"
+             class="education-card-text">Факультет: Вычислительная техника и программное обеспечение</a>
+          <div class="time-line-card-date"> 2016-2020</div>
 
         </div>
-          <div class="education-card">
-            <a target="_blank" href="https://www.turan-edu.kz/" class="education-card-title">Университет "Туран"</a>
-            <a target="_blank" href="https://turan.edu.kz/ru/obrprogramms/informaczionnye-sistemy/" class="education-card-text">Факультет:Автономные информационные и управляющие системы</a>
-            <div class="time-line-card-date"> 2020-2023</div>
-          </div>
+        <div class="education-card">
+          <a target="_blank" href="https://www.turan-edu.kz/" class="education-card-title">Университет "Туран"</a>
+          <a target="_blank" href="https://turan.edu.kz/ru/obrprogramms/informaczionnye-sistemy/"
+             class="education-card-text">Факультет: Автономные информационные и управляющие системы</a>
+          <div class="time-line-card-date"> 2020-2023</div>
+        </div>
       </div>
 
     </section>
