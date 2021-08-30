@@ -116,15 +116,17 @@
         <div class="awards-card">
           <a href="http://techcup.kz/" target="_blank" class="awards-title">Almaty TechCup 2018</a>
           <span class="awards-text">2 место на чемпионате научных проектов среди школьников и студентов в старшей лиге.  </span>
-          <button type="button" @click="show">Click to show</button>
+          <button type="button" @click="show(techCup)">Click to show</button>
         </div>
         <div class="awards-card">
           <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Almaty 2019</a>
           <span class="awards-text">1 место на чемионате рабочих профессий в компетенции мобильная робототехника. </span>
+          <button type="button" @click="show(wsAlmaty)">Click to show</button>
         </div>
         <div class="awards-card">
           <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Kazakhstan 2019</a>
           <span class="awards-text">Участвие в национальном чемпионате  рабочих профессий в компетенция мобильная робототехника.</span>
+          <button type="button" @click="show(wsNur)">Click to show</button>
         </div>
       </div>
     </section>
@@ -146,8 +148,8 @@
              class="education-card-text">Факультет: Автономные информационные и управляющие системы</a>
           <div class="time-line-card-date"> 2020-2023</div>
 
+          </div>
         </div>
-      </div>
     </section>
   </div>
 </template>
@@ -158,17 +160,12 @@ import VueViewer from 'v-viewer'
 import Vue from 'vue'
 Vue.use(VueViewer)
 export default {
-  "name": 'AboutMe',
-  "data"() {
+  name: 'AboutMe',
+  data() {
     return {
-      images: [
-        "https://picsum.photos/200/200",
-        "https://picsum.photos/300/200",
-        "https://picsum.photos/250/200"
-      ],
-      "techCup":'/assets/images/diplomas/almaty-techcup.png',
-      "wsAlmaty":'/assets/images/diplomas/ws-almaty.png',
-      "wsNur":'/assets/images/diplomas/ws-nur.png',
+      "techCup":['/img/almaty-techcup.229f9e1f.png'],
+      "wsAlmaty":['/img/ws-almaty.1f6bbe24.png'],
+      "wsNur":['/img/ws-nur.e4ee3f20.png'],
       "experience": [
         {
           "year": 2021,
@@ -197,10 +194,10 @@ export default {
       ]
     }
   },
-  "methods": {
-    "show"() {
+  methods: {
+    show(image) {
       this.$viewerApi({
-        "images": this.images,
+        "images": image,
       })
     },
   }
