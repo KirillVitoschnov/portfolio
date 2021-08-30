@@ -163,9 +163,9 @@ export default {
   name: 'AboutMe',
   data() {
     return {
-      "techCup":['/img/almaty-techcup.229f9e1f.png'],
-      "wsAlmaty":['/img/ws-almaty.1f6bbe24.png'],
-      "wsNur":['/img/ws-nur.e4ee3f20.png'],
+      "techCup":[''],
+      "wsAlmaty":[''],
+      "wsNur":[''],
       "experience": [
         {
           "year": 2021,
