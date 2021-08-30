@@ -1,4 +1,6 @@
 .education-card-text{
-text-decoration: none;
+  transition-property: all;
+  transition-duration: .5s;
   font-weight:bold;
+  color:gray;
 }

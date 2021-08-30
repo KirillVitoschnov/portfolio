@@ -112,62 +112,94 @@
     </section>
     <section id="awards">
       <h3 class="section-title">Достижения</h3>
+      <div class="awards-wrapper">
+        <div class="awards-card">
+          <a href="http://techcup.kz/" target="_blank" class="awards-title">Almaty TechCup 2018</a>
+          <span class="awards-text">2 место на чемпионате научных проектов среди школьников и студентов в старшей лиге.  </span>
+          <button type="button" @click="show(techCup)">Click to show</button>
+        </div>
+        <div class="awards-card">
+          <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Almaty 2019</a>
+          <span class="awards-text">1 место на чемионате рабочих профессий в компетенции мобильная робототехника. </span>
+          <button type="button" @click="show(wsAlmaty)">Click to show</button>
+        </div>
+        <div class="awards-card">
+          <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Kazakhstan 2019</a>
+          <span class="awards-text">Участвие в национальном чемпионате  рабочих профессий в компетенция мобильная робототехника.</span>
+          <button type="button" @click="show(wsNur)">Click to show</button>
+        </div>
+      </div>
     </section>
     <section id="education">
       <h3 class="section-title">Образование</h3>
       <div class="education-wrapper">
 
-          <div class="education-card">
-            <a target="_blank" href="https://catec.kz/" class="education-card-title">Центральноазиатский
-              технико-экономический колледж (ЦАТЭК)</a>
-            <a target="_blank" href="https://catec.kz/speciality/programmnoe-obespechenie"
-                class="education-card-text">Факультет:вычислительная техника и программное обеспечение</a>
-            <div class="time-line-card-date"> 2016-2020</div>
+        <div class="education-card">
+          <a target="_blank" href="https://catec.kz/" class="education-card-title">Центральноазиатский
+            технико-экономический колледж (ЦАТЭК)</a>
+          <a target="_blank" href="https://catec.kz/speciality/programmnoe-obespechenie"
+             class="education-card-text">Факультет: Вычислительная техника и программное обеспечение</a>
+          <div class="time-line-card-date"> 2016-2020</div>
 
         </div>
-          <div class="education-card">
-            <a target="_blank" href="https://www.turan-edu.kz/" class="education-card-title">Университет "Туран"</a>
-            <a target="_blank" href="https://turan.edu.kz/ru/obrprogramms/informaczionnye-sistemy/" class="education-card-text">Факультет:Автономные информационные и управляющие системы</a>
-            <div class="time-line-card-date"> 2020-2023</div>
-          </div>
-      </div>
+        <div class="education-card">
+          <a target="_blank" href="https://www.turan-edu.kz/" class="education-card-title">Университет "Туран"</a>
+          <a target="_blank" href="https://turan.edu.kz/ru/obrprogramms/informaczionnye-sistemy/"
+             class="education-card-text">Факультет: Автономные информационные и управляющие системы</a>
+          <div class="time-line-card-date"> 2020-2023</div>
 
+          </div>
+        </div>
     </section>
   </div>
 </template>
 
 <script>
+import 'viewerjs/dist/viewer.css'
+import VueViewer from 'v-viewer'
+import Vue from 'vue'
+Vue.use(VueViewer)
 export default {
   name: 'AboutMe',
   data() {
     return {
-      experience: [
+      "techCup":['/img/almaty-techcup.229f9e1f.png'],
+      "wsAlmaty":['/img/ws-almaty.1f6bbe24.png'],
+      "wsNur":['/img/ws-nur.e4ee3f20.png'],
+      "experience": [
         {
-          year: 2021,
-          mounth: 'ИЮЛ',
-          title: '«ТОО Гребцы и Галеры»',
-          text: 'Перевод сайтов на улучшенную архитектурную модель:\n' +
+          "year": 2021,
+          "mounth": 'ИЮЛ',
+          "title": '«ТОО Гребцы и Галеры»',
+          "text": 'Перевод сайтов на улучшенную архитектурную модель:\n' +
               'Сайты были переведены на SCSS с последующим бандлином\n' +
               'Введена модульная схема с разделением сайта на компоненты и отдельные страницы (до этого все было в одной куче на обычном CSS без переменных, миксинов и прочего). Отдельно выделен индивидуальный дизайн для каждого сайта, благодаря чему стало возможно создавать новый без повторов, копирования и переназначения конфликтующих стилей\n' +
               'Улучшена верстка страниц с упором на отказ от JS анимации и позиционирования элементов, использования картинок, табличной верстки и т.д. Внедрены (там, где было возможно) иконочные шрифты\n' +
               'Были поправлены многочисленные баги и "узкие" места, из-за которых оформление сайта редакторами иногда вызывало ошибки отображения.',
-          data: 'Июль 2021',
+          "data": 'Июль 2021',
         },
         {
-          year: 2020,
-          mounth: 'СЕН',
-          title: '«ТОО Залупа»',
-          text: 'Перевод сайтов на улучшенную архитектурную модель:\n' +
+          "year": 2020,
+          "mounth": 'СЕН',
+          "title": '«ТОО Залупа»',
+          "text": 'Перевод сайтов на улучшенную архитектурную модель:\n' +
               'Сайты были переведены на SCSS с последующим бандлином\n' +
               'Введена модульная схема с разделением сайта на компоненты и отдельные страницы (до этого все было в одной куче на обычном CSS без переменных, миксинов и прочего). Отдельно выделен индивидуальный дизайн для каждого сайта, благодаря чему стало возможно создавать новый без повторов, копирования и переназначения конфликтующих стилей\n' +
               'Улучшена верстка страниц с упором на отказ от JS анимации и позиционирования элементов, использования картинок, табличной верстки и т.д. Внедрены (там, где было возможно) иконочные шрифты\n' +
               'Были поправлены многочисленные баги и "узкие" места, из-за которых оформление сайта редакторами иногда вызывало ошибки отображения.',
-          data: 'Сентябрь 2020 - Май 2021',
+          "data": 'Сентябрь 2020 - Май 2021',
         },
 
 
       ]
     }
+  },
+  methods: {
+    show(image) {
+      this.$viewerApi({
+        "images": image,
+      })
+    },
   }
 }
 </script>
