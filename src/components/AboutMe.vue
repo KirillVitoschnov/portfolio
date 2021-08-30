@@ -116,17 +116,17 @@
         <div class="awards-card">
           <a href="http://techcup.kz/" target="_blank" class="awards-title">Almaty TechCup 2018</a>
           <span class="awards-text">2 место на чемпионате научных проектов среди школьников и студентов в старшей лиге.  </span>
-          <button type="button" @click="show(techCup)">Click to show</button>
+          <button class="awards-button" type="button" @click="show(techCup)">Сертификат</button>
         </div>
         <div class="awards-card">
           <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Almaty 2019</a>
           <span class="awards-text">1 место на чемионате рабочих профессий в компетенции мобильная робототехника. </span>
-          <button type="button" @click="show(wsAlmaty)">Click to show</button>
+          <button class="awards-button" type="button" @click="show(wsAlmaty)">Сертификат</button>
         </div>
         <div class="awards-card">
           <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Kazakhstan 2019</a>
           <span class="awards-text">Участвие в национальном чемпионате  рабочих профессий в компетенция мобильная робототехника.</span>
-          <button type="button" @click="show(wsNur)">Click to show</button>
+          <button class="awards-button" type="button" @click="show(wsNur)">Cертификат</button>
         </div>
       </div>
     </section>
@@ -163,9 +163,9 @@ export default {
   name: 'AboutMe',
   data() {
     return {
-      "techCup":[''],
-      "wsAlmaty":[''],
-      "wsNur":[''],
+      "techCup":['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/almaty-techcup.png?raw=true'],
+      "wsAlmaty":['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/ws-almaty.png?raw=true'],
+      "wsNur":['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/ws-nur.png?raw=true'],
       "experience": [
         {
           "year": 2021,
