@@ -1,5 +1,30 @@
 <template>
   <div class="content">
+    <section id="about_me">
+      <h3 class="section-title">Обо мне</h3>
+      Lorem ipsum dolor sit amet,
+      consectetuer adipiscing elit.
+      Aenean commodo ligula eget dolor.
+      Aenean massa. Cum sociis natoque penatibus
+      et magnis dis parturient montes, nascetur
+      ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem.
+      Nulla consequat massa quis enim. Donec pede justo,
+      fringilla vel, aliquet nec, vulputate eget, arcu.
+      In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+      Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+      Cras dapibus. Vivamus elementum semper nisi.
+      Aenean vulputate eleifend tellus. Aenean leo ligula,
+      porttitor eu, consequat vitae, eleifend ac, enim.
+      Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+      tellus. Phasellus viverra nulla ut metus varius laoreet.
+      Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+      ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
+      sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
+      luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
+      libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla
+      mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+    </section>
     <section id="skills">
       <h3 class="section-title">Навыки</h3>
       <div class="card">
@@ -116,17 +141,17 @@
         <div class="awards-card">
           <a href="http://techcup.kz/" target="_blank" class="awards-title">Almaty TechCup 2018</a>
           <span class="awards-text">2 место на чемпионате научных проектов среди школьников и студентов в старшей лиге.  </span>
-          <button type="button" @click="show(techCup)">Click to show</button>
+          <button class="awards-button" type="button" @click="show(techCup)">Сертификат</button>
         </div>
         <div class="awards-card">
           <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Almaty 2019</a>
           <span class="awards-text">1 место на чемионате рабочих профессий в компетенции мобильная робототехника. </span>
-          <button type="button" @click="show(wsAlmaty)">Click to show</button>
+          <button class="awards-button" type="button" @click="show(wsAlmaty)">Сертификат</button>
         </div>
         <div class="awards-card">
           <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Kazakhstan 2019</a>
           <span class="awards-text">Участвие в национальном чемпионате  рабочих профессий в компетенция мобильная робототехника.</span>
-          <button type="button" @click="show(wsNur)">Click to show</button>
+          <button class="awards-button" type="button" @click="show(wsNur)">Cертификат</button>
         </div>
       </div>
     </section>
@@ -163,9 +188,9 @@ export default {
   name: 'AboutMe',
   data() {
     return {
-      "techCup":[''],
-      "wsAlmaty":[''],
-      "wsNur":[''],
+      "techCup":['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/almaty-techcup.png?raw=true'],
+      "wsAlmaty":['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/ws-almaty.png?raw=true'],
+      "wsNur":['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/ws-nur.png?raw=true'],
       "experience": [
         {
           "year": 2021,

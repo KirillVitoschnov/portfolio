@@ -1,4 +1,6 @@
 .awards-card{
+  display: flex;
+  flex-direction: column;
   width:30%;
   min-height: 200px;
   border-radius: 5px;
