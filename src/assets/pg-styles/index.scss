@@ -20,3 +20,30 @@ body{
   flex: 1 0 auto;
 
 }
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  transition: all 0.25s;
+}
+.close:hover {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
