@@ -1,0 +1,41 @@
+.work-description {
+  overflow: hidden;
+}
+
+.work-description-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+}
+
+.work-description-title-text {
+  display: block;
+  font-size: 20px;
+  margin-left: 1rem;
+
+}
+
+.work-description-end {
+  cursor:pointer;
+  user-select: none;
+  margin-right: 1rem;
+  width:20px;
+  height:20px;
+  background-size: contain;
+  background-image:url("./images/icons/three-points.png");
+}
+.work-description-text{
+  display: block;
+  height: 51px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.work-description-more{
+  position: absolute;
+  top: 0px;
+  background-color: white;
+  height: 99%;
+}
