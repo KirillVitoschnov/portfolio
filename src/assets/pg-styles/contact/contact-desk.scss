@@ -1,11 +1,13 @@
 .contact-desk{
   padding: 57px;
-  display: flex;
   width: 70%;
   margin: auto;
   border-radius: 20px;
   box-shadow: 4px 4px 4px 5px #0707071a;
   overflow: hidden;
+  h2{
+    text-align: center;
+  }
 
 }
 .contact-wrapper{
