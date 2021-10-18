@@ -6,24 +6,6 @@
 @import "./MainPage/index";
 @import "./contact/index";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body{
   margin: 0; display: flex;
   flex-direction: column;
@@ -67,3 +49,58 @@ body{
 .close:after {
   transform: rotate(-45deg);
 }
+@media (max-width: 1400px) {
+  .content{
+    width:1100px;
+    margin: 0 auto;
+    padding-top: 100px;
+    flex: 1 0 auto;
+
+  }
+}
+@media (max-width: 1130px) {
+  .content{
+    width:900px;
+    margin: 0 auto;
+    padding-top: 100px;
+    flex: 1 0 auto;
+
+  }
+}
+@media (max-width: 940px) {
+  .content{
+    width:700px;
+    margin: 0 auto;
+    padding-top: 100px;
+    flex: 1 0 auto;
+
+  }
+}
+@media (max-width: 729px) {
+  .content{
+    width:500px;
+    margin: 0 auto;
+    padding-top: 100px;
+    flex: 1 0 auto;
+
+  }
+
+}
+@media (max-width: 510px) {
+  .content{
+    width:400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    flex: 1 0 auto;
+
+  }
+
+}
+@media (max-width: 400px) {
+  .content{
+    width:320px;
+    margin: 0 auto;
+    padding-top: 100px;
+    flex: 1 0 auto;
+
+  }}
