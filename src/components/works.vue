@@ -5,7 +5,7 @@
         <div class="work-image-wrapper">
           <img
               class="work-image"
-              width="310px"
+              width="318px"
               height="320px"
               :src="item.image"
               alt="">
@@ -49,10 +49,11 @@ export default {
           title:'Игра змейка',
           description:'компьютерная игра, впервые появившаяся в кнопочном телефоне Nokia 6110. Разработана финским разработчиком Танели Арманто и выпущена компанией Nokia.',
           technologys:['html5','css','canvas','javascript'],
-          image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkiT-yyLmJNm-LFIkIuz04Wd-sOUYRrpt-bQ&usqp=CAU',
-          projectUrl:'https://www.google.com/',
+          image:'https://www.anti-malware.ru/files/styles/imagesize400w/public/images/source/snimok_ekrana_2019-04-05_v_11.49.35.png?itok=SjAWpzUY',
+          projectUrl:'https://kirillvitoschnov.github.io/snakeGame/',
           sourceUrl:'https://www.google.com/',
         },
+
 
 
       ]

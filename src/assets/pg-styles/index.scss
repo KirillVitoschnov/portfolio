@@ -3,6 +3,27 @@
 @import './footer/index';
 @import './contacts/index';
 @import "./works/index";
+@import "./MainPage/index";
+@import "./contact/index";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body{
   margin: 0; display: flex;
   flex-direction: column;
@@ -27,10 +48,9 @@ body{
   top: 10px;
   width: 32px;
   height: 32px;
-  transition: all 0.25s;
+  transition: all 1s;
 }
 .close:hover {
-  transform: rotate(180deg);
   opacity: 1;
 }
 .close:before, .close:after {
