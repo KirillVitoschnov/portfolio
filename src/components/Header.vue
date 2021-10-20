@@ -2,16 +2,16 @@
   <div class="header-wrapper" >
     <div @click="changeLang" class="header-language">{{ $i18n.locale }}</div>
     <nav class="header-content">
-      <div v-bind:class="{ 'header-buttons-active': currentRouteName=='/' }" @click="changeRoute('/')"
+      <div v-bind:class="{ 'header-buttons-active': $route.path=='/' }" @click="changeRoute('/')"
            class="header-buttons">{{$t('Главная')}}
       </div>
-      <div v-bind:class="{ 'header-buttons-active': currentRouteName=='/about_me' }" @click="changeRoute('/about_me')"
+      <div v-bind:class="{ 'header-buttons-active': $route.path=='/about_me' }" @click="changeRoute('/about_me')"
            class="header-buttons">{{$t('Обо_мне')}}
       </div>
-      <div v-bind:class="{ 'header-buttons-active': currentRouteName=='/works' }" @click="changeRoute('/works')"
+      <div v-bind:class="{ 'header-buttons-active': $route.path=='/works' }" @click="changeRoute('/works')"
            class="header-buttons">{{$t('Работы')}}
       </div>
-      <div v-bind:class="{ 'header-buttons-active': currentRouteName=='/contacts' }" @click="changeRoute('/contacts')"
+      <div v-bind:class="{ 'header-buttons-active': $route.path=='/contacts' }" @click="changeRoute('/contacts')"
            class="header-buttons">{{$t('Контакты')}}
       </div>
     </nav>
@@ -22,17 +22,14 @@ export default {
   name: 'Header',
   data() {
     return {
-      currentRouteName: ''
     }
   },
   mounted() {
-    this.currentRouteName = this.$router.currentRoute.path
     this.$i18n.locale=sessionStorage.getItem('locale')==false ?  sessionStorage.getItem('locale') : 'ru'
   },
   methods: {
     changeRoute(name) {
       this.$router.push(name)
-      this.currentRouteName = this.$router.currentRoute.path
     },
     changeLang() {
       if (this.$i18n.locale == 'ru') {
@@ -55,3 +52,4 @@ export default {
 }
 
 </script>
+
