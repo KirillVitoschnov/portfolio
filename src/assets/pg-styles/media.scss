@@ -1,0 +1,130 @@
+@media(max-width:1400px){
+  .contact-desk {
+    width: 100%;
+  }
+  .work-card {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 1366px) {
+  .main-banner-text{
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 1136px) {
+  .awards-wrapper{
+    justify-content: space-evenly;
+  }
+  .awards-card{
+    width:45%;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 939px) {
+  .timeline-badge {
+    top: -26px;
+  }
+  .timeline-movement{
+    display: flex;
+    flex-direction: column;
+    border-bottom: dashed 1px #1f1d1d;
+    position: relative;
+    width:100%;
+    height:max-content;
+    &:nth-child(2n+1) {
+      .time-line-card-wrapper-helper{
+        width: 100%;
+        margin-right: unset;
+        padding-left: unset;
+        padding-right: unset;
+        color:red
+
+      }
+
+    }
+    &:nth-child(2n) {
+      .time-line-card-wrapper-helper{
+        width: 100%;
+        margin-left: unset;
+        padding-left: unset;
+        padding-right: unset;
+        color:green
+      }
+    }
+  }
+
+  .education-card{
+    width:100%;
+  }
+  .education-wrapper{
+    flex-direction: column;
+  }
+  .awards-wrapper{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .awards-button{
+    margin:auto;
+  }
+
+  .awards-card{
+    min-height: 220px;
+    width:100%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 759px) {
+  .card-icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 30px;
+    width: 219px;
+    justify-content: center;
+  }
+}
+@media (max-width: 727px) {
+  .contact-wrapper {
+    width:100%;
+  }
+  .main-banner-title{
+    font-size:40px
+  }
+  .main-banner-text{
+    margin: 2rem auto auto;
+  }
+}
+@media (max-width: 510px) {
+  .contact-desk {
+    padding: 25px;
+  }
+  .card-icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 30px;
+    width: 150px;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .contact-item-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-icon {
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 30px;
+    width: 135px;
+    justify-content: center;
+  }
+  .card-icon-image {
+    width: 122px;
+    height: 122px;
+    margin: 0 auto;
+  }
+}

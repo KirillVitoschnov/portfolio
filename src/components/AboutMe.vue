@@ -2,7 +2,7 @@
   <div class="content">
     <section id="about_me">
       <h3 class="section-title">Обо мне</h3>
-      Lorem ipsum dolor sit amet,
+      <span class="about_me_text">Lorem ipsum dolor sit amet,
       consectetuer adipiscing elit.
       Aenean commodo ligula eget dolor.
       Aenean massa. Cum sociis natoque penatibus
@@ -24,6 +24,7 @@
       luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
       libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla
       mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+        </span>
     </section>
     <section id="skills">
       <h3 class="section-title">Навыки</h3>
