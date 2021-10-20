@@ -59,19 +59,19 @@ export default {
           title:'Игра змейка',
           descriptionMin:'Это игра в  змейку)',
           description:'компьютерная игра, впервые появившаяся в кнопочном телефоне Nokia 6110. Разработана финским разработчиком Танели Арманто и выпущена компанией Nokia.',
-          technologys:['html5','css','canvas','javascript'],
-          image:'https://www.anti-malware.ru/files/styles/imagesize400w/public/images/source/snimok_ekrana_2019-04-05_v_11.49.35.png?itok=SjAWpzUY',
+          technologys:['html','css','canvas','javascript'],
+          image:'https://rembound.com/files/creating-a-snake-game-tutorial-with-html5/snake.png',
           projectUrl:'https://kirillvitoschnov.github.io/snakeGame/',
           sourceUrl:'https://www.google.com/',
         },
         {
           showEl:true,
           showMore:false,
-          title:'Игра змейка',
-          descriptionMin:'Это игра в  змейку)',
-          description:'компьютерная игра, впервые появившаяся в кнопочном телефоне Nokia 6110. Разработана финским разработчиком Танели Арманто и выпущена компанией Nokia.',
-          technologys:['php','loh','html5','css'],
-          image:'https://www.anti-malware.ru/files/styles/imagesize400w/public/images/source/snimok_ekrana_2019-04-05_v_11.49.35.png?itok=SjAWpzUY',
+          title:'Сайт портфолио',
+          descriptionMin:'Сайт портфолио, вы уже находитесь здесь)',
+          description:'Сайт визитка, на котором находится основная информация обо мне, проекты и контакты.',
+          technologys:['html','scss','javascript','vue'],
+          image:'https://static6.depositphotos.com/1064545/666/i/950/depositphotos_6664635-stock-photo-businessman-still-pointing-with-both.jpg',
           projectUrl:'https://kirillvitoschnov.github.io/snakeGame/',
           sourceUrl:'https://www.google.com/',
         },
@@ -98,6 +98,7 @@ export default {
     checkedTech: function () {
       for (var i=0; i<this.works.length;i++){
         this.works[i].showEl = this.checkedTech.every(item => this.works[i].technologys.includes(item));
+
       }
     },
 
