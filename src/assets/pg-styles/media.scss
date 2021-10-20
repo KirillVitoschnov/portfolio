@@ -112,6 +112,9 @@
   }
 }
 @media (max-width: 400px) {
+  .work-filter-item {
+    width: 40%;
+  }
   .contact-item-text {
     white-space: nowrap;
     overflow: hidden;
