@@ -2,28 +2,17 @@
   <div class="content">
     <section id="about_me">
       <h3 class="section-title">Обо мне</h3>
-      <span class="about_me_text">Lorem ipsum dolor sit amet,
-      consectetuer adipiscing elit.
-      Aenean commodo ligula eget dolor.
-      Aenean massa. Cum sociis natoque penatibus
-      et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-      Nulla consequat massa quis enim. Donec pede justo,
-      fringilla vel, aliquet nec, vulputate eget, arcu.
-      In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-      Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-      Cras dapibus. Vivamus elementum semper nisi.
-      Aenean vulputate eleifend tellus. Aenean leo ligula,
-      porttitor eu, consequat vitae, eleifend ac, enim.
-      Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
-      tellus. Phasellus viverra nulla ut metus varius laoreet.
-      Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-      ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
-      sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
-      luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
-      libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla
-      mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+      <span class="about_me_text">
+        <p>Целеустремленный разработчик, которому нравится его дело.
+        Люблю изучать что то новое, да и новые технологии в целом.</p>
+        <p>Из основных умений у меня это владение frontend разработкой : html,css,js.
+        Для css использую препроцессоры sass и less для более комфортной работы.
+        На джава скрипт я могу писать как и на ванильном джаваскрипт, так и использовать фреймворки (vue,react,angular)</p>
+        <p>Так же есть не большой опыт с backend а именно с php (laravel), могу модифицировать уже имеющийся функционал, (прописать миграцию, добавить новые поля в апишку и тд) .</p>
+        <p>Есть опыт работы с гитом, разворачивал несколько репозиториев для коммерческой разработки, а так же есть свои репозитории.</p>
+<p>Еще из важных умений у меня это умение гуглить, так как в современных реалиях невозможно все знать, и проще будет эту информацию найти в интернете.</p>
+        <p>Cтараюсь всегда проявлять инициативу, в колледже учавствовал в олимпидах по программированию и робототехнике.</p>
+        <p>Люблю учавствовать в интересных проектах </p>
         </span>
     </section>
     <section id="skills">
@@ -128,7 +117,7 @@
               </div>
               <div class="time-line-card-wrapper">
                 <div class="time-line-card-title">{{ work.title }}</div>
-                <div class="time-line-card-text">{{ work.text }}</div>
+                <div v-html="work.text" class="time-line-card-text"></div>
                 <div class="time-line-card-date">{{ work.data }}</div>
               </div>
             </div>
@@ -141,17 +130,19 @@
       <div class="awards-wrapper">
         <div class="awards-card">
           <a href="http://techcup.kz/" target="_blank" class="awards-title">Almaty TechCup 2018</a>
-          <span class="awards-text">2 место на чемпионате научных проектов среди школьников и студентов в старшей лиге.  </span>
+          <span
+              class="awards-text">2 место на чемпионате научных проектов среди школьников и студентов в старшей лиге.  </span>
           <button class="awards-button" type="button" @click="show(techCup)">Сертификат</button>
         </div>
         <div class="awards-card">
           <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Almaty 2019</a>
-          <span class="awards-text">1 место на чемионате рабочих профессий в компетенции мобильная робототехника. </span>
+          <span
+              class="awards-text">1 место на чемионате рабочих профессий в компетенции мобильная робототехника. </span>
           <button class="awards-button" type="button" @click="show(wsAlmaty)">Сертификат</button>
         </div>
         <div class="awards-card">
           <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Kazakhstan 2019</a>
-          <span class="awards-text">Участвие в национальном чемпионате  рабочих профессий в компетенция мобильная робототехника.</span>
+          <span class="awards-text">Участвие в национальном чемпионате  рабочих профессий в компетенции мобильная робототехника.</span>
           <button class="awards-button" type="button" @click="show(wsNur)">Cертификат</button>
         </div>
       </div>
@@ -174,8 +165,8 @@
              class="education-card-text">Факультет: Автономные информационные и управляющие системы</a>
           <div class="time-line-card-date"> 2020-2023</div>
 
-          </div>
         </div>
+      </div>
     </section>
   </div>
 </template>
@@ -184,35 +175,33 @@
 import 'viewerjs/dist/viewer.css'
 import VueViewer from 'v-viewer'
 import Vue from 'vue'
+
 Vue.use(VueViewer)
 export default {
   name: 'AboutMe',
   data() {
     return {
-      "techCup":['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/almaty-techcup.png?raw=true'],
-      "wsAlmaty":['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/ws-almaty.png?raw=true'],
-      "wsNur":['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/ws-nur.png?raw=true'],
+      "techCup": ['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/almaty-techcup.png?raw=true'],
+      "wsAlmaty": ['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/ws-almaty.png?raw=true'],
+      "wsNur": ['https://github.com/KirillVitoschnov/portfolio/blob/main/src/assets/images/diplomas/ws-nur.png?raw=true'],
       "experience": [
         {
           "year": 2021,
           "mounth": 'ИЮЛ',
-          "title": '«ТОО Гребцы и Галеры»',
-          "text": 'Перевод сайтов на улучшенную архитектурную модель:\n' +
-              'Сайты были переведены на SCSS с последующим бандлином\n' +
-              'Введена модульная схема с разделением сайта на компоненты и отдельные страницы (до этого все было в одной куче на обычном CSS без переменных, миксинов и прочего). Отдельно выделен индивидуальный дизайн для каждого сайта, благодаря чему стало возможно создавать новый без повторов, копирования и переназначения конфликтующих стилей\n' +
-              'Улучшена верстка страниц с упором на отказ от JS анимации и позиционирования элементов, использования картинок, табличной верстки и т.д. Внедрены (там, где было возможно) иконочные шрифты\n' +
-              'Были поправлены многочисленные баги и "узкие" места, из-за которых оформление сайта редакторами иногда вызывало ошибки отображения.',
+          "title": '«TROUBLESHOOTING TECHNOLOGY»',
+          "text": 'Развернул single page application сайт с нуля, занимался версткой и подключением api к этому сайту.\n' +
+              'Тесно взаимодействовал с бэкэндером для разработки функционала, и исправления ошибок.\n' +
+              'Занимался упрощением внешнего интерфейса для более простого пониманием пользователем (так как основная аудитория данного сайта была школьники и учителя)\n' +
+              '\n' +
+              '<br><br>Так же развернул сайт для сбора статистики по проектам к компании . В этом сайте я объединил несколько проектов, собирал всю информацию с Api , делал подсчеты и вывод их в pie Chart.',
           "data": 'Июль 2021',
         },
         {
           "year": 2020,
           "mounth": 'СЕН',
-          "title": '«ТОО Залупа»',
-          "text": 'Перевод сайтов на улучшенную архитектурную модель:\n' +
-              'Сайты были переведены на SCSS с последующим бандлином\n' +
-              'Введена модульная схема с разделением сайта на компоненты и отдельные страницы (до этого все было в одной куче на обычном CSS без переменных, миксинов и прочего). Отдельно выделен индивидуальный дизайн для каждого сайта, благодаря чему стало возможно создавать новый без повторов, копирования и переназначения конфликтующих стилей\n' +
-              'Улучшена верстка страниц с упором на отказ от JS анимации и позиционирования элементов, использования картинок, табличной верстки и т.д. Внедрены (там, где было возможно) иконочные шрифты\n' +
-              'Были поправлены многочисленные баги и "узкие" места, из-за которых оформление сайта редакторами иногда вызывало ошибки отображения.',
+          "title": '«ТОО Incraft»',
+          "text": 'Проходил стажировку в данной компании, занимался исправлением ошибок на сайтах, доработка адаптив функционала сайта, занимался версткой страниц и подключал их backend части. .\n' +
+              'Разрабатывал новые компоненты для сайтов , и написание им backend части',
           "data": 'Сентябрь 2020 - Май 2021',
         },
 

@@ -5,8 +5,10 @@
 @import "./works/index";
 @import "./MainPage/index";
 @import "./contact/index";
+@import "./burger-menu/index";
 @import "./media";
 body{
+  background-color: #ebebeb!important;
   margin: 0; display: flex;
   flex-direction: column;
 }

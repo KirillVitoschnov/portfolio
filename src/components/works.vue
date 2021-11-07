@@ -1,9 +1,14 @@
 <template>
   <div class="content">
     <div class="work-filter">
+      <div class="work-sub-filter">
       <div class="work-filter-item" v-for="tech in technologysArray" :key="tech">
         <input   type="checkbox" :id="tech" name="subscribe" :value="tech" v-model="checkedTech">
         <label style="margin-left: 0.5rem" :for="tech">{{tech}}</label>
+      </div>
+      </div>
+      <div class="work-filter-message">В данном блоке находятся мои  проекты которые создавались в целях изучения или эксперимента
+        <br>*Для более удобного просмотра советую воспользоваться фильтром
       </div>
     </div>
     <div class="works-wrapper">
@@ -68,9 +73,9 @@ export default {
           showEl:true,
           showMore:false,
           title:'Сайт портфолио',
-          descriptionMin:'Сайт портфолио, вы уже находитесь здесь)',
+          descriptionMin:'Сайт портфолио (вы уже находитесь здесь)',
           description:'Сайт визитка, на котором находится основная информация обо мне, проекты и контакты.',
-          technologys:['html','scss','javascript','vue'],
+          technologys:['html','scss','javascript','vue','i18n'],
           image:'https://static6.depositphotos.com/1064545/666/i/950/depositphotos_6664635-stock-photo-businessman-still-pointing-with-both.jpg',
           projectUrl:'https://kirillvitoschnov.github.io/snakeGame/',
           sourceUrl:'https://www.google.com/',
@@ -78,49 +83,14 @@ export default {
         {
           showEl:true,
           showMore:false,
-          title:'Игра змейка',
-          descriptionMin:'Это игра в  змейку)',
-          description:'компьютерная игра, впервые появившаяся в кнопочном телефоне Nokia 6110. Разработана финским разработчиком Танели Арманто и выпущена компанией Nokia.',
-          technologys:['html','css','canvas','javascript'],
-          image:'https://rembound.com/files/creating-a-snake-game-tutorial-with-html5/snake.png',
-          projectUrl:'https://kirillvitoschnov.github.io/snakeGame/',
-          sourceUrl:'https://www.google.com/',
-        },
-        {
-          showEl:true,
-          showMore:false,
-          title:'Сайт портфолио',
-          descriptionMin:'Сайт портфолио, вы уже находитесь здесь)',
-          description:'Сайт визитка, на котором находится основная информация обо мне, проекты и контакты.',
-          technologys:['html','scss','javascript','vue'],
+          title:'Cписок задач',
+          descriptionMin:'Простой список задач написанные на Vue js',
+          description:'Простой список задач написанные на Vue js с регистрацией  с использованием Local Storage',
+          technologys:['html','css','javascript','vue','localStorage','vuelidate'],
           image:'https://static6.depositphotos.com/1064545/666/i/950/depositphotos_6664635-stock-photo-businessman-still-pointing-with-both.jpg',
           projectUrl:'https://kirillvitoschnov.github.io/snakeGame/',
           sourceUrl:'https://www.google.com/',
         },
-        {
-          showEl:true,
-          showMore:false,
-          title:'Игра змейка',
-          descriptionMin:'Это игра в  змейку)',
-          description:'компьютерная игра, впервые появившаяся в кнопочном телефоне Nokia 6110. Разработана финским разработчиком Танели Арманто и выпущена компанией Nokia.',
-          technologys:['html','css','canvas','javascript'],
-          image:'https://rembound.com/files/creating-a-snake-game-tutorial-with-html5/snake.png',
-          projectUrl:'https://kirillvitoschnov.github.io/snakeGame/',
-          sourceUrl:'https://www.google.com/',
-        },
-        {
-          showEl:true,
-          showMore:false,
-          title:'Сайт портфолио',
-          descriptionMin:'Сайт портфолио, вы уже находитесь здесь)',
-          description:'Сайт визитка, на котором находится основная информация обо мне, проекты и контакты.',
-          technologys:['html','scss','javascript','vue'],
-          image:'https://static6.depositphotos.com/1064545/666/i/950/depositphotos_6664635-stock-photo-businessman-still-pointing-with-both.jpg',
-          projectUrl:'https://kirillvitoschnov.github.io/snakeGame/',
-          sourceUrl:'https://www.google.com/',
-        },
-
-
 
       ]
 

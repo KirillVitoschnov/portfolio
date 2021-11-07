@@ -1,20 +1,32 @@
 .work-filter{
+  background-color: white;
   justify-content: space-between;
   flex-wrap: wrap;
   box-shadow: 4px 4px 4px 5px #0707071a;
   border-radius: 20px;
   display: flex;
   width: 100%;
-  height: 100px;
+  min-height: 100px;
+  height:max-content;
   border: 1px solid rgba(0, 0, 0, 0.125);
   padding: 20px;
   margin-bottom: 2rem;
 }
 .work-filter-item{
+  overflow: hidden;
+  white-space: nowrap;
   user-select: none;
   margin: auto 0.5rem;
   font-size: 20px;
   line-height: 20px;
+}
+.work-sub-filter{
 
-
+  padding-right: 10px;
+  display:flex;
+  flex-wrap: wrap;
+  width:50%;
+}
+.work-filter-message{
+  width:50%
 }

@@ -1,5 +1,13 @@
 <template>
-  <div class="header-wrapper" >
+  <div>
+    <div @click="burgerMenu=!burgerMenu" v-bind:class="{ 'change':  burgerMenu }" class="burger-container">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+  <div v-if="burgerMenu" class="header-wrapper" >
+
     <div @click="changeLang" class="header-language">{{ $i18n.locale }}</div>
     <nav class="header-content">
       <div v-bind:class="{ 'header-buttons-active': $route.path=='/' }" @click="changeRoute('/')"
@@ -16,18 +24,40 @@
       </div>
     </nav>
   </div>
+  </div>
 </template>
 <script>
 export default {
   name: 'Header',
   data() {
     return {
+      burgerMenu:false
     }
   },
+  created() {
+    window.addEventListener("resize", this.sizeChange);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.sizeChange);
+  },
   mounted() {
+    this.sizeChange()
     this.$i18n.locale=sessionStorage.getItem('locale')==false ?  sessionStorage.getItem('locale') : 'ru'
   },
+  watch: {
+    '$route' () {
+      this.burgerMenu=false
+      this.sizeChange()
+      window.scrollTo(0,0);
+
+    },
+
+  },
+
   methods: {
+    sizeChange(){
+      this.burgerMenu = window.innerWidth > 649;
+    },
     changeRoute(name) {
       this.$router.push(name)
     },
