@@ -38,13 +38,9 @@
               <a target="_blank" :href="item.projectUrl" class="works-show"></a>
               <a target="_blank" :href="item.sourceUrl" class="works-github"></a>
             </div>
-
           </div>
         </div>
-
       </div>
-
-
     </div>
   </div>
 </template>
@@ -61,13 +57,24 @@ export default {
         {
           showEl:true,
           showMore:false,
+          title:'Valorant Landing concept',
+          descriptionMin:'Valorant Landing concept',
+          description:'Концептуальный лендинг, дизайн которого был найден на просторах интернета. ',
+          technologys:['html','scss','javascript','react'],
+          image:'./projects/valorant-landing.png',
+          projectUrl:'https://kirillvitoschnov.github.io/valorant-landing-concept/',
+          sourceUrl:'https://github.com/KirillVitoschnov/valorant-landing-concept',
+        },
+        {
+          showEl:true,
+          showMore:false,
           title:'Игра змейка',
           descriptionMin:'Это игра в  змейку)',
-          description:'компьютерная игра, впервые появившаяся в кнопочном телефоне Nokia 6110. Разработана финским разработчиком Танели Арманто и выпущена компанией Nokia.',
+          description:'Простая игра в змейку, делал по гайдам с ютуба, не много доработал по коду.Основная цель была просто попробовать работу с Canvas',
           technologys:['html','css','canvas','javascript'],
-          image:'https://rembound.com/files/creating-a-snake-game-tutorial-with-html5/snake.png',
+          image:'./projects/snake.png',
           projectUrl:'https://kirillvitoschnov.github.io/snakeGame/',
-          sourceUrl:'https://www.google.com/',
+          sourceUrl:'https://github.com/KirillVitoschnov/snakeGame',
         },
         {
           showEl:true,
@@ -76,20 +83,31 @@ export default {
           descriptionMin:'Сайт портфолио (вы уже находитесь здесь)',
           description:'Сайт визитка, на котором находится основная информация обо мне, проекты и контакты.',
           technologys:['html','scss','javascript','vue','i18n'],
-          image:'https://static6.depositphotos.com/1064545/666/i/950/depositphotos_6664635-stock-photo-businessman-still-pointing-with-both.jpg',
-          projectUrl:'https://kirillvitoschnov.github.io/snakeGame/',
-          sourceUrl:'https://www.google.com/',
+          image:'./projects/portfolio.png',
+          projectUrl:'https://kirillvitoschnov.github.io/portfolio/#/',
+          sourceUrl:'https://github.com/KirillVitoschnov/portfolio',
         },
         {
           showEl:true,
           showMore:false,
           title:'Cписок задач',
-          descriptionMin:'Простой список задач написанные на Vue js',
-          description:'Простой список задач написанные на Vue js с регистрацией  с использованием Local Storage',
+          descriptionMin:'Простой список задач написанный на Vue js',
+          description:'Простой список задач написанный на Vue js с регистрацией  с использованием Local Storage',
           technologys:['html','css','javascript','vue','localStorage','vuelidate'],
-          image:'https://static6.depositphotos.com/1064545/666/i/950/depositphotos_6664635-stock-photo-businessman-still-pointing-with-both.jpg',
-          projectUrl:'https://kirillvitoschnov.github.io/snakeGame/',
-          sourceUrl:'https://www.google.com/',
+          image:'./projects/vueTodoList.png',
+          projectUrl:'https://kirillvitoschnov.github.io/VueTodoList/',
+          sourceUrl:'https://github.com/KirillVitoschnov/VueTodoList',
+        },
+        {
+          showEl:true,
+          showMore:false,
+          title:'Текстовый редактор',
+          descriptionMin:'Текстовый редактор для веб разработчика',
+          description:'Текстовый редактор который поможет в работе Веб разработчику',
+          technologys:['html','css','javascript','vue'],
+          image:'./projects/textEdit.png',
+          projectUrl:'https://kirillvitoschnov.github.io/text-editor/',
+          sourceUrl:'https://github.com/KirillVitoschnov/text-editor',
         },
 
       ]

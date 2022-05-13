@@ -10,18 +10,18 @@
 
     <div @click="changeLang" class="header-language">{{ $i18n.locale }}</div>
     <nav class="header-content">
-      <div v-bind:class="{ 'header-buttons-active': $route.path=='/' }" @click="changeRoute('/')"
+      <router-link tag="a"  to="/"  v-bind:class="{ 'header-buttons-active': $route.path=='/' }" @click="changeRoute('/')"
            class="header-buttons">{{$t('Главная')}}
-      </div>
-      <div v-bind:class="{ 'header-buttons-active': $route.path=='/about_me' }" @click="changeRoute('/about_me')"
+      </router-link>
+      <router-link tag="a" to="/about_me" v-bind:class="{ 'header-buttons-active': $route.path=='/about_me' }" @click="changeRoute('/about_me')"
            class="header-buttons">{{$t('Обо_мне')}}
-      </div>
-      <div v-bind:class="{ 'header-buttons-active': $route.path=='/works' }" @click="changeRoute('/works')"
+      </router-link>
+      <router-link tag="a" to="/works" v-bind:class="{ 'header-buttons-active': $route.path=='/works' }" @click="changeRoute('/works')"
            class="header-buttons">{{$t('Работы')}}
-      </div>
-      <div v-bind:class="{ 'header-buttons-active': $route.path=='/contacts' }" @click="changeRoute('/contacts')"
+      </router-link>
+      <router-link tag="a" to="/contacts" v-bind:class="{ 'header-buttons-active': $route.path=='/contacts' }" @click="changeRoute('/contacts')"
            class="header-buttons">{{$t('Контакты')}}
-      </div>
+      </router-link>
     </nav>
   </div>
   </div>

@@ -1,4 +1,5 @@
 .header-buttons{
+  color: white;
   transition-property: all;
   transition-duration: .5s;
   user-select: none;
@@ -6,8 +7,9 @@
   padding: .4em .6em;
   font-family: ALSArtemiusSans,Helvetica,sans-serif;
   font-size: 25px;
+  text-decoration: none;
 }
-div.header-buttons:hover {
+a.header-buttons:hover {
   color: white;
   background-color: gray;
 }
