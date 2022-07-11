@@ -1,0 +1,90 @@
+.contact-desk{
+  background-color:white;
+  padding: 57px;
+  width: 70%;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 5px #0707071a;
+  overflow: hidden;
+  h2{
+    text-align: center;
+  }
+
+}
+.contact-wrapper{
+  height: 70%;
+  margin: auto;
+  width: 70%;
+}
+.contact-wrapper-item-hh{
+  margin-top: 40px;
+  display:flex;
+}
+.contact-wrapper-item-hh::before{
+  background-image: url('./images/icons/hh.jpg');
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  content:"";
+
+
+
+
+}
+.contact-wrapper-item-wh{
+  margin-top: 40px;
+  display:flex;
+}
+.contact-wrapper-item-wh::before{
+  background-image: url('./images/icons/wh.png');
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  content:"";
+}
+.contact-wrapper-item-linin{
+  margin-top: 40px;
+  display:flex;
+}
+.contact-wrapper-item-linin::before{
+  background-image: url('./images/icons/linIn.png');
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  content:"";
+
+
+}
+.contact-wrapper-email{
+  margin-top: 40px;
+  display:flex;
+}
+.contact-wrapper-email::before{
+  background-image: url('./images/icons/email.png');
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  content:"";
+
+}
+.contact-wrapper-github{
+  margin-top: 40px;
+  display:flex;
+}
+.contact-wrapper-github::before{
+  background-image: url('./images/github.png');
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  content:"";
+
+}
+.contact-item-text{
+  line-height: 40px;
+  margin-left: 15px;
+}
