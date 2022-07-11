@@ -169,9 +169,9 @@ export default {
   name: 'AboutMe',
   data() {
     return {
-      "techCup": ['./diplomas/almaty-techcup.png'],
-      "wsAlmaty": ['./diplomas/ws-almaty.png'],
-      "wsNur": ['./diplomas/ws-nur.png'],
+      "techCup": ['/portfolio/dist/diplomas/almaty-techcup.png'],
+      "wsAlmaty": ['/portfolio/dist/diplomas/ws-almaty.png'],
+      "wsNur": ['/portfolio/dist/diplomas/ws-nur.png'],
       "experience": [
         {
           "year": 2021,
