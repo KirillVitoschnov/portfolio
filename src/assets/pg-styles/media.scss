@@ -119,9 +119,12 @@
 @media (max-width: 649px) {
 
   .header-language{
-    margin: 6rem auto auto;
+    position: absolute;
+    top: 28px;
+    right: 33px;
   }
   .header-content{
+    margin-top: 33px;
     padding:0;
     flex-direction: column;
     margin-bottom: 2rem;
