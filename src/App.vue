@@ -13,9 +13,15 @@ import Footer from "./components/Footer";
 import Header from "./components/Header"
 export default {
   name: 'App',
+  beforeCreate() {
+    if (!sessionStorage.getItem('locale')) {
+      sessionStorage.setItem('locale', this.$i18n.locale);
+    } else {
+      this.$i18n.locale =sessionStorage.getItem('locale');
+    }
+  },
   components: {
     Header,
-
     Footer,
   }
 }

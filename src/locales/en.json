@@ -1,2 +1,79 @@
 {
+  "Январь": "January",
+  "Февраль": "February",
+  "Март": "March",
+  "Апрель": "April",
+  "Май": "May",
+  "Июнь": "June",
+  "Июль": "July",
+  "Август": "August",
+  "Сентябрь": "September",
+  "Октябрь": "October",
+  "Ноябрь": "November",
+  "Декабрь": "December",
+  "Главная": "Main",
+  "Обо_мне": "About me",
+  "Работы": "My Projects",
+  "Контакты": "Contacts",
+  "ВитошновКирилл": "Vitoshnov Kirill",
+  "ГлавнаяСтраница": {
+    "главнаяПодпись": "I want to do things that matter",
+    "навигация": "Site navigation",
+    "КотороткоОбоМне": "Which is about me",
+    "Навыки": "Skills",
+    "Опыт": "Work experience",
+    "Достижения": "Progress",
+    "Образование": "Education",
+    "ЛичныеПроекты": "Personal projects",
+    "Контакты": "Contact information"
+  },
+  "ОбратнаяСвязь": {
+    "ОбратнаяСвязь": "Feedback",
+    "МоеРезюме": "My resume"
+  },
+  "ОбоМне": {
+    "ОбоМне": "About me",
+    "ОбоМнеИнформация": " <p>My name is Kirill I am a Web programmer</p>\n <p>I have <b> Secondary special education</b> in the specialty <b>programmer technician</b> and at the moment I am getting a higher education in the specialty <b>Information systems</b></p>\n       <p>I like to show an asset in any team Predalagat their ways of implementation and so on</p>\n        <p>During my college studies, I often took part in programming championships (Participated in robotics championships I was fond of programming microcontrollers and raspberry pi mini computers) </p>\n        <p>I love Modern technology cool projects with interesting interfaces</p>",
+    "Навыки": "Skills",
+    "Прочее": "Other",
+    "Опыт": "Work experience",
+    "Сертификат": "Certificate",
+    "Достижения": "Progress",
+    "ДостиженияПодробно": {
+      "tech-cup": "2nd place in the championship of scientific projects among schoolchildren and students in the senior league.",
+      "ws-alm": "1st place in the chemionate of working professions in the competence of mobile robotics.",
+      "ws-nur": "Participation in the national championship of working professions in the competence of mobile robotics."
+    },
+    "Образование": "Education",
+    "Цатэк": "Central Asian\n            Technical and Economic College (TSATEK)",
+    "Туран": "Turan University",
+    "Факультет": "Faculty",
+    "ФакультетЦатэк": "Computer technology and software",
+    "ФакультетТуран": "Autonomous information and control systems",
+    "МестоРаботы": {
+      "Incraft": "I did an internship in this company, I was engaged in correcting errors on websites, finalizing the adaptive functionality of the site, I was engaged in page layout and connected their backend parts.Developed new components for websites , and writing them backend parts",
+      "TROUBLESHOOTING": "Engaged in the development of websites on vue.<br> Engaged in layout, and writing client scripts for it. <br> Worked with legacy code, as well as wrote new functionality from scratch himself.  <br> Worked closely with project managers, back-end developers, and designers. <br> Engaged in the development of landing pages on vue. And also developed a theme for wordpres, with multilingual support. <br>  In places, I took tasks on developing backend functionality on laravel"
+    }
+  },
+  "МоиПроекты": {
+    "рекомендация": "This section contains my projects that were created for the purpose of study or\nexperiment",
+    "titleValorant": "Valorant Landing concept",
+    "descriptionMinValorant": "Valorant Landing concept",
+    "descriptionValorant": "A conceptual landing page, the design of which was found on the Internet. ",
+    "titleSnake": "Snake game",
+    "descriptionMinSnake": "It's a snake game)",
+    "descriptionSnake": "A simple snake game, I did it according to the guides from YouTube, I didn't modify the code much.The main goal was just to try working with Canvas",
+    "titlePortfolio": "Portfolio Website",
+    "descriptionMinPortfolio": "Portfolio website (you are already here)",
+    "descriptionPortfolio": "The vcard website, which contains basic information about me, projects and contacts.",
+    "titleToDoList": "Task list",
+    "descriptionMinToDoList": "A simple task list written in Vue js",
+    "descriptionToDoList": "A simple task list written in Vue js with registration using Local Storage",
+    "titleTextEditor": "Text Editor",
+    "descriptionMinTextEditor": "A text editor for a web developer",
+    "descriptionTextEditor": "A text editor that will help a Web developer in his work",
+    "titleAutoTranslate": "Auto json translator",
+    "descriptionMinAutoTranslate": "Script for automatic site translation",
+    "descriptionAutoTranslate": "A script that translates json files into another language using yandex translator instead of the developer. Especially useful when you need to translate more than 1000 translations into several languages"
+  }
 }

@@ -6,11 +6,13 @@
   display: flex;
   justify-content: space-between;
   margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid black;
 }
 
 .work-description-title-text {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 1rem;
 
 }
@@ -46,7 +48,7 @@ height: 50px;
 line-height: 50px;
 background-color: black;
 color: white;
-font-size: 20px;
+font-size: 18px;
 }
 .url-wrapper{
   position: absolute;

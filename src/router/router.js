@@ -23,6 +23,7 @@ let router= new Router ({
             component:  contact
         },
         {
+            name:'about',
             path: '/about_me',
             component: AboutMe
         },

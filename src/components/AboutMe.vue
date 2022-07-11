@@ -1,19 +1,13 @@
 <template>
   <div class="content">
     <section id="about_me">
-      <h3 class="section-title">Обо мне</h3>
-      <span class="about_me_text">
-        <p>Меня зовут Кирилл, я Web программист.</p>
-       <p>Я имею <b> Среднее образование</b> по специальности <b>техник программист</b>, и в данный момент получаю высшее образование по специальности Информационные системы.</p>
-        <p>Во время обучения в колледже я часто принимал участие в чемионатах по программированию. (Принимал участие в чемпионатах по робототехнике, занимался программированием микроконтроллеров) </p>
-        <p>Люблю Современные технологии, крутые проекты с интересными Интерфейсами.</p>
-
-
+      <h3 class="section-title">{{ $t('ОбоМне.ОбоМне') }}</h3>
+      <span class="about_me_text" v-html="$t('ОбоМне.ОбоМнеИнформация')">
 
         </span>
     </section>
     <section id="skills">
-      <h3 class="section-title">Навыки</h3>
+      <h3 class="section-title"> {{ $t('ОбоМне.Навыки') }}</h3>
       <div class="card">
         <div class="card-content">
           <h4 class="card-title">Front-end</h4>
@@ -37,10 +31,6 @@
             <div class="card-icon">
               <img alt="" src="../assets/images/logos/vue-js.png" class="card-icon-image">
               VUE
-            </div>
-            <div class="card-icon">
-              <img alt="" src="../assets/images/logos/nuxt.png" class="card-icon-image">
-              Nuxt.js
             </div>
             <div class="card-icon">
               <img alt="" src="../assets/images/logos/react.png" class="card-icon-image">
@@ -75,7 +65,7 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <h4 class="card-title">Прочее</h4>
+          <h4 class="card-title"> {{ $t('ОбоМне.Прочее') }}</h4>
           <div class="card-icons-wrapper">
             <div class="card-icon">
               <img alt="" src="../assets/images/logos/git.png" class="card-icon-image">
@@ -99,7 +89,7 @@
       </div>
     </section>
     <section id="experience">
-      <h3 class="section-title">Опыт работы</h3>
+      <h3 class="section-title">{{ $t('ОбоМне.Опыт') }}</h3>
       <div class="time-line-wrapper">
         <div class="timeline-movement-top">
           <div class="timeline-round">
@@ -115,7 +105,7 @@
               <div class="time-line-card-wrapper">
                 <div class="time-line-card-title">{{ work.title }}</div>
                 <div v-html="work.text" class="time-line-card-text"></div>
-                <div class="time-line-card-date">{{ work.data }}</div>
+                <div class="time-line-card-date"><span>{{ work.data }}</span></div>
               </div>
             </div>
           </div>
@@ -123,43 +113,44 @@
       </div>
     </section>
     <section id="awards">
-      <h3 class="section-title">Достижения</h3>
+      <h3 class="section-title">{{ $t('ОбоМне.Достижения') }}</h3>
       <div class="awards-wrapper">
         <div class="awards-card">
           <a href="http://techcup.kz/" target="_blank" class="awards-title">Almaty TechCup 2018</a>
           <span
-              class="awards-text">2 место на чемпионате научных проектов среди школьников и студентов в старшей лиге.  </span>
-          <button class="awards-button" type="button" @click="show(techCup)">Сертификат</button>
+              class="awards-text">{{ $t('ОбоМне.ДостиженияПодробно.tech-cup') }}  </span>
+          <el-button style="margin-top: auto" type="info" @click="show(techCup)">{{ $t('ОбоМне.Сертификат') }}
+          </el-button>
         </div>
         <div class="awards-card">
           <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Almaty 2019</a>
           <span
-              class="awards-text">1 место на чемионате рабочих профессий в компетенции мобильная робототехника. </span>
-          <button class="awards-button" type="button" @click="show(wsAlmaty)">Сертификат</button>
+              class="awards-text">{{ $t('ОбоМне.ДостиженияПодробно.ws-alm') }} </span>
+          <el-button style="margin-top: auto" type="info" @click="show(wsAlmaty)">{{ $t('ОбоМне.Сертификат') }}
+          </el-button>
         </div>
         <div class="awards-card">
           <a target="_blank" href="https://worldskills.kz/" class="awards-title">World Skills Kazakhstan 2019</a>
-          <span class="awards-text">Участвие в национальном чемпионате  рабочих профессий в компетенции мобильная робототехника.</span>
-          <button class="awards-button" type="button" @click="show(wsNur)">Cертификат</button>
+          <span class="awards-text">{{ $t('ОбоМне.ДостиженияПодробно.ws-nur') }}</span>
+          <el-button style="margin-top: auto" type="info" @click="show(wsNur)">{{ $t('ОбоМне.Сертификат') }}</el-button>
         </div>
       </div>
     </section>
     <section id="education">
-      <h3 class="section-title">Образование</h3>
+      <h3 class="section-title">{{ $t('ОбоМне.Образование') }}</h3>
       <div class="education-wrapper">
 
         <div class="education-card">
-          <a target="_blank" href="https://catec.kz/" class="education-card-title">Центральноазиатский
-            технико-экономический колледж (ЦАТЭК)</a>
+          <a target="_blank" href="https://catec.kz/" class="education-card-title"> {{ $t('ОбоМне.Цатэк') }}</a>
           <a target="_blank" href="https://catec.kz/speciality/programmnoe-obespechenie"
-             class="education-card-text">Факультет: Вычислительная техника и программное обеспечение</a>
+             class="education-card-text">{{ $t('ОбоМне.Факультет') }}:{{ $t('ОбоМне.ФакультетЦатэк') }}</a>
           <div class="time-line-card-date"> 2016-2020</div>
 
         </div>
         <div class="education-card">
-          <a target="_blank" href="https://www.turan-edu.kz/" class="education-card-title">Университет "Туран"</a>
+          <a target="_blank" href="https://www.turan-edu.kz/" class="education-card-title">{{ $t('ОбоМне.Туран') }}</a>
           <a target="_blank" href="https://turan.edu.kz/ru/obrprogramms/informaczionnye-sistemy/"
-             class="education-card-text">Факультет: Автономные информационные и управляющие системы</a>
+             class="education-card-text">{{ $t('ОбоМне.Факультет') }}:{{ $t('ОбоМне.ФакультетТуран') }}</a>
           <div class="time-line-card-date"> 2020-2023</div>
 
         </div>
@@ -178,40 +169,71 @@ export default {
   name: 'AboutMe',
   data() {
     return {
-      "techCup": ['./projects/almaty-techcup.png'],
-      "wsAlmaty": ['./projects/ws-almaty.png'],
+      "techCup": ['./diplomas/almaty-techcup.png'],
+      "wsAlmaty": ['./diplomas/ws-almaty.png'],
       "wsNur": ['./diplomas/ws-nur.png'],
       "experience": [
         {
           "year": 2021,
-          "mounth": 'ИЮЛ',
+          "mounth": this.$t('Июнь').substr(0, 3),
           "title": '«TROUBLESHOOTING TECHNOLOGY»',
-          "text": 'Разработал single page aplication для тестирования способностей школьников, занимался подключением js, верстал страницы, занимался доработкой и улучшением интерфейса. Тесно взаимодействовал с бэкэндером.\n' +
-              '\n' +
-              'Занимался поддержкой уже созданных ранее проектов, исправление багов, и доработки функционала.\n' +
-              '\n' +
-              'Создал с нуля фронт dashboardов для Академии Елбасы. \n' +
-              'Объединил порядка 5 проектов в один сайт, занимался выводом статистики в Сhart блоки, в таблицы и списки.\n' +
-              'Каждому блоку  добавлял фильтрацию и при необходимости пагинацию.  Оптимизировал фронт для более быстрой загрузки , и добавил лодеры на каждый раздел.\n' +
-              'Тесно взаимодействовал  с бэкэндерами, project менеджером, и заказчиками.\n' +
-              '\n' +
-              'Занимался созданием лэндингов на vue js  и wordpress.',
-          "data": 'Июль 2021',
+          "text": this.$t('ОбоМне.МестоРаботы.TROUBLESHOOTING'),
+          "data": `${this.$t('Июнь')} 2021`,
         },
         {
           "year": 2020,
-          "mounth": 'СЕН',
+          "mounth": this.$t('Сентябрь').substr(0, 3),
           "title": '«ТОО Incraft»',
-          "text": 'Проходил стажировку в данной компании, занимался исправлением ошибок на сайтах, доработка адаптив функционала сайта, занимался версткой страниц и подключал их backend части. .\n' +
-              'Разрабатывал новые компоненты для сайтов , и написание им backend части',
-          "data": 'Сентябрь 2020 - Май 2021',
+          "text": this.$t('ОбоМне.МестоРаботы.Incraft'),
+          "data": `${this.$t('Сентябрь')} 2020 - ${this.$t('Май')} 2021`,
         },
 
 
       ]
     }
   },
+  mounted() {
+    const scrollTo = this.scrollTo.bind(this)
+    setTimeout(function () {
+      scrollTo()
+    })
+  },
+  watch: {
+    '$i18n.locale' () {
+      this.experience=[
+        {
+          "year": 2021,
+          "mounth": this.$t('Июнь').substr(0, 3),
+          "title": '«TROUBLESHOOTING TECHNOLOGY»',
+          "text": this.$t('ОбоМне.МестоРаботы.TROUBLESHOOTING'),
+          "data": `${this.$t('Июнь')} 2021`,
+        },
+        {
+          "year": 2020,
+          "mounth": this.$t('Сентябрь').substr(0, 3),
+          "title": '«ТОО Incraft»',
+          "text": this.$t('ОбоМне.МестоРаботы.Incraft'),
+          "data": `${this.$t('Сентябрь')} 2020 - ${this.$t('Май')} 2021`,
+        },
+
+
+      ]
+    },
+  },
   methods: {
+    scrollTo() {
+      if (this.$route.query.id) {
+        try {
+          const id = this.$route.query.id;
+          const yOffset = -100;
+          const element = document.getElementById(id);
+          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({top: y, behavior: 'smooth'});
+        } catch (e) {
+          console.log('block not found')
+        }
+      }
+    },
     show(image) {
       this.$viewerApi({
         "images": image,

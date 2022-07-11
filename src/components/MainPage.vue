@@ -1,38 +1,20 @@
 <template>
-  <div class="content" >
+  <div class="content">
 
-<div class="main-banner-title "> Меня зовут Кирилл и я занимаюсь клиентской разработкой сайтов.</div>
-    <div class="roller">
-    <span id="rolltext">
-      Мой Стек технологий<br/>
-      HTML<br/>
-    CSS<br/>
-      java script <br>
-      SASS<br/>
-      Vue<br/>
-      React<br/>
-      Bootstrap<br/>
-      Laravel<br/>
-      Php<br/>
-      MySql<br/>
-      Git<br/>
-      Linux<br/>
-      ssh<br/>
-      figma<br/>
-
-      </span>
+    <div class="main-banner-title "> {{ $t('ГлавнаяСтраница.главнаяПодпись') }}</div>
+    <div class="main-banner-text about_me_text">
+      <div class="main-banner-menu-title">{{ $t('ГлавнаяСтраница.навигация') }}</div>
+      <div class="main-banner-menu-wrapper">
+        <el-button @click="changePage('about' ,'about_me')" type="info">{{$t('ГлавнаяСтраница.КотороткоОбоМне')}}</el-button>
+        <el-button @click="changePage('about' ,'skills')" type="info">{{$t('ГлавнаяСтраница.Навыки')}}</el-button>
+        <el-button @click="changePage('about' ,'experience')" type="info">{{$t('ГлавнаяСтраница.Опыт')}}</el-button>
+        <el-button @click="changePage('about' ,'awards')" type="info"> {{$t('ГлавнаяСтраница.Достижения')}}</el-button>
+        <el-button @click="changePage('about' ,'education')" type="info">{{$t('ГлавнаяСтраница.Образование')}}</el-button>
+        <el-button @click="changePage('/works' )" type="info">{{$t('ГлавнаяСтраница.ЛичныеПроекты')}}</el-button>
+        <el-button @click="changePage('/contacts' )" type="info">{{$t('ГлавнаяСтраница.Контакты')}}</el-button>
+      </div>
     </div>
-  <div class="main-banner-text about_me_text">
-    <br>Целеустремленный web разработчик .
-    <br>Готов к изучению новых технологий , всегда готов к экспериментам в разработке ПО
-    <br>Если передо мной стоит задача, то я всегда найду решение на нее, чего бы это не стоило.
-    <br>Из основных направлений которые мне сейчас интересны это
-    <br>frontend: react, vue
-    <br>backend: laravel, node js
-    <br>Готов работать как удаленно, так и в офисе, для удаленной работы есть в наличии мощный компьютер для работы.
-
   </div>
-</div>
 
 </template>
 
@@ -41,6 +23,16 @@ export default {
   name: 'mainPage',
   data() {
     return {}
+  },
+  methods: {
+    changePage(page, id) {
+      if (id) {
+        this.$router.push({name: page, query: {'id': id}})
+      } else {
+        this.$router.push(page)
+      }
+
+    }
   }
 }
 </script>
